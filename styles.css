@@ -4,7 +4,9 @@
   --pry-color: #272a31;
   --sec-color: #ec5242;
   --tertiary-color: #d3d3d3;
+  --pry-font: 'COCOGOOSE', sans-serif;
   --sec-font: 'Lato', sans-serif;
+  --tertiary-font: 'Poppins', sans-serif;
 }
 
 * {
@@ -23,6 +25,7 @@ body {
   display: flex;
   align-items: center;
   height: 4.4375rem;
+  margin-bottom: 28px;
 }
 
 .logo {
@@ -48,4 +51,53 @@ body {
   font-size: 30px;
   line-height: 12px;
   margin-left: 1.5rem;
+}
+
+.title-section {
+  padding: 24px;
+}
+
+.details {
+  margin: 36px 0;
+  color: var(--sec-color);
+}
+
+.quote-text {
+  font-family: var(--sec-font);
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+.title {
+  font-family: var(--pry-font);
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.descriptions {
+  border: 4px solid #fff;
+  display: flex;
+  padding: 16px;
+  margin: 16px 0;
+  background-color: var(--tertiary-color);
+}
+
+.description {
+  font-family: var(--sec-font);
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.date {
+  font-family: var(--tertiary-font);
+  font-size: 30px;
+  line-height: 42px;
+  color: var(--pry-color);
+  margin-bottom: 8px;
+}
+
+.location {
+  font-family: var(--sec-font);
+  font-weight: 600;
 }
