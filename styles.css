@@ -297,6 +297,13 @@ body {
   color: grey;
 }
 
+.speaker-3,
+.speaker-4,
+.speaker-5,
+.speaker-6 {
+  display: none;
+}
+
 .more-speakers {
   display: flex;
   justify-content: center;
