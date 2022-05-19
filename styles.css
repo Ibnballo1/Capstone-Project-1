@@ -196,7 +196,6 @@ body {
 }
 
 .speakers {
-  border: 2px solid green;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -231,6 +230,7 @@ body {
 .person {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .sp-1-details {
@@ -265,4 +265,54 @@ body {
   font-weight: 300;
   color: gray;
   font-size: 10px;
+}
+
+.partner-section {
+  border: 2px solid green;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--pry-color);
+  padding-top: 24px;
+}
+
+.partner {
+  margin-bottom: 8px;
+  color: var(--tertiary-color);
+  font-family: var(--sec-font);
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.partners {
+  border: 2px solid red;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  list-style-type: none;
+}
+
+.partners li {
+  color: grey;
+}
+
+.more-speakers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  border: 2px solid var(--tertiary-color);
+}
+
+.more {
+  font-family: var(--tertiary-font);
+  color: var(--pry-color);
+  margin-right: 6px;
+}
+
+.entity {
+  color: var(--sec-color);
+  font-weight: 800;
+  font-size: 12px;
 }
