@@ -51,7 +51,7 @@ const data = [
     title: 'Julia Leda',
     description: 'Berkman Professor of Entrepreneural Legal Studies at Harvard Law School',
     linkImg: 'images/speaker_04.png',
-    more: `Benkler Studies commoms-based peer production, and puublished his seminar book The Wealth of Networks in 2006.`,
+    more: 'Benkler Studies commoms-based peer production, and puublished his seminar book The Wealth of Networks in 2006.',
   },
   {
     title: 'Lilia Tretikov',
