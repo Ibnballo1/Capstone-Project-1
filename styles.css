@@ -21,6 +21,10 @@ body {
   background-size: cover;
 }
 
+.hide-scroll {
+  overflow-y: hidden;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -32,11 +36,51 @@ body {
     display: none;
 }
 
+.icon-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--pry-color);
+  opacity: 1;
+  width: 99.8%;
+  height: 99.9%;
+  overflow-y: hidden;
+}
+
 .fa-bars {
   font-weight: 700;
   font-size: 30px;
   line-height: 12px;
   margin-left: 1.5rem;
+}
+
+.js-nav-list {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  padding: 106px 0 0 28px;
+  z-index: 100;
+}
+
+.close {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  top: 51px;
+  right: 45px;
+  margin: 0;
+  color: #fff;
+  font-weight: 600;
+  font-size: 32px;
+  width: 12px;
+  height: 12px;
 }
 
 .navis {
@@ -513,7 +557,22 @@ body {
   }
 
   .fa-bars {
+    display: none !important;
+  }
+
+  #close_bar {
     display: none;
+  }
+
+  .js-nav-list {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
   }
 
   .navbars {
