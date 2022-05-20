@@ -244,6 +244,10 @@ body {
   line-height: 12px;
 }
 
+.all-progs {
+  display: none;
+}
+
 .see-past-section {
   display: flex;
   flex-direction: column;
@@ -269,11 +273,20 @@ body {
   margin-bottom: 32px;
 }
 
+.abt-past {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
 .past-bootcamp-images,
 .past-bootcamp-images2 {
-  width: 90%;
-  height: 30vh;
+  width: 100%;
+  height: 40vh;
   margin-bottom: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .past-bootcamp-images {
@@ -472,6 +485,12 @@ body {
 /* Screen size greater than 768px */
 
 @media only screen and (min-width: 769px) {
+  body {
+    background-image: url('images/desktop-background-img.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+  }  
 
   .header {
     background-color: #fff;
@@ -529,26 +548,215 @@ body {
   }
 
   .details {
-    margin: 36px 0;
+    margin: 60px 0;
+    width: 70%;
     color: var(--sec-color);
   }
   
   .quote-text {
-    font-family: var(--sec-font);
-    font-weight: 500;
-    font-size: 24px;
-    margin-bottom: 6px;
+    font-size: 36px;
   }
   
   .title {
-    font-family: var(--pry-font);
-    font-weight: 700;
-    font-size: 30px;
+    font-size: 40px;
+  }
+
+  .descriptions {
+    width: 65%;
   }
   
-  .abt-title {
-    font-size: 26px;
+  .programs {
+    display: flex;
+    margin-bottom: 34px;
   }
   
+  .prog {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 5px;
+    margin-bottom: 0;
+  }
+
+  .program-icon-img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .program-icon-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .prog-title {
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .title-1,
+  .title-2,
+  .title-3,
+  .title-4,
+  .title-5 {
+    margin: 8px 0;
+  }
+  
+  .prog-details {
+    font-family: var(--sec-font);
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+  }
+  
+  .all-progs {
+    display: block;
+    font-family: var(--sec-font);
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--tertiary-color);
+  }
+  
+  .join-bootcamp {
+    display: none;
+  }
+
+  .speaker-3,
+  .speaker-4,
+  .speaker-5,
+  .speaker-6 {
+    display: flex;
+  }
+  
+  .speakers-details {
+    grid-template-columns: repeat(2, 1fr);
+    width: 85%;
+    justify-content: center;
+  }
+  
+  .speaker {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 40% 1fr;
+    margin-bottom: 38px;
+  }
+  
+  .person {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .sp-1-details {
+    margin-top: 3px;
+  }
+  
+  .sp-name {
+    font-family: var(--tertiary-font);
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--pry-color);
+    margin-bottom: 8px;
+  }
+  
+  .sp-details {
+    font-family: var(--tertiary-font);
+    font-style: oblique;
+    font-size: 13px;
+    line-height: 18px;
+    color: var(--sec-color);
+    margin-bottom: 8px;
+  }
+  
+  .divider {
+    width: 20px;
+    border-bottom: 2px solid var(--tertiary-color);
+    margin-bottom: 8px;
+  }
+
+  .more-speakers {
+    display: none;
+  }
+
+  .partners {
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    width: 95%;
+    padding-bottom: 14px;
+  }
+
+  .footer {
+    justify-content: space-evenly;
+  }
+  
+  .footer-logo {
+    height: 50px;
+  }
+  
+  .footer-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .copyright {
+    font-family: var(--tertiary-font);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    color: grey;
+  }
+
+  .abt-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .abt-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+  }
+
+  .abt-details h1 {
+    text-align: center;
+  }
+
+  .abt-dsc {
+    width: 50%;
+  }
+
+  .abt-logo {
+    width: 30%;
+  }
+
+  .abt-quote {
+    display: none;
+  }
+
+  .abt-past {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    width: 50%;
+  }
+
+  .abt-it {
+    text-align: center;
+  }
+
+  .partner-section {
+    display: none;
+  }
+
+  .footer {
+    border: 2px solid green;
+    background-color: var(--pry-color);
+    height: 15vh;
+  }
 
 }
