@@ -255,7 +255,6 @@ body {
 }
 
 .see-past-section {
-  border: 2px solid green;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -280,16 +279,30 @@ body {
   margin-bottom: 32px;
 }
 
+.past-bootcamp-images,
+.past-bootcamp-images2 {
+  width: 90%;
+  height: 30vh;
+  margin-bottom: 16px;
+}
+
 .past-bootcamp-images {
-  border: 2px solid red;
+  background-image: url('images/workshop1.png');
+}
+
+.past-bootcamp-images2 {
+  background-image: url('images/workshop2.png');
+}
+
+.past-img {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url('images/workshop1.png');
-  width: 90%;
-  height: 30vh;
+  width: initial;
+  height: inherit;
   background-color: var(--sec-color);
+  background-color: rgba(233, 173, 168, 0.6);
 }
 
 .year,
@@ -378,8 +391,7 @@ body {
 }
 
 .partner-section {
-  border: 2px solid green;
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -396,15 +408,22 @@ body {
 }
 
 .partners {
-  border: 2px solid red;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
   list-style-type: none;
+  width: 99.9%;
+  padding-bottom: 14px;
 }
 
 .partners li {
   color: grey;
+  font-family: var(--tertiary-font);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
 }
 
 .speaker-3,
@@ -433,3 +452,30 @@ body {
   font-weight: 800;
   font-size: 12px;
 }
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.footer-logo {
+  height: 50px;
+}
+
+.footer-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.copyright {
+  font-family: var(--tertiary-font);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  color: grey;
+}
+
