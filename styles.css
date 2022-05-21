@@ -478,10 +478,9 @@ body {
 
 .partners {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style-type: none;
   width: 99.9%;
   padding-bottom: 14px;
