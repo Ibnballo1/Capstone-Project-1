@@ -389,10 +389,10 @@ body {
 }
 
 .speakers-details {
-  margin-top: 20px;
+  margin: 20px 0;
   display: grid;
   grid-template-columns: 1fr;
-  height: 55vh;
+  height: 65vh;
 }
 
 .speaker {
