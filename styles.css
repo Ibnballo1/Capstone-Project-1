@@ -238,6 +238,10 @@ body {
   margin-bottom: 0.75rem;
 }
 
+.prog:hover {
+  border: 2px solid #fff;
+}
+
 .transparency {
   opacity: 2;
 }
