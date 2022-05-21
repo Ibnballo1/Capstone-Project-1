@@ -21,6 +21,10 @@ body {
   background-size: cover;
 }
 
+.social {
+  display: none;
+}
+
 .hide-scroll {
   overflow-y: hidden;
 }
@@ -558,6 +562,41 @@ body {
     background-color: #fff;
     flex-direction: row-reverse;
     justify-content: space-around;
+  }
+
+  .social {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.375rem 12.5rem 0.375rem 0;
+    background-color: #3e3e3e;
+  }
+
+  .social-media {
+    margin-right: 8px;
+  }
+
+  .social-media i {
+    color: #f3f3f3;
+    margin-right: 8px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+
+  .top-nav-link {
+    font-family: var(--tertiary-font);
+    font-weight: 500;
+    font-size: 12px;
+    color: #f3f3f3;
+    text-decoration: none;
+    margin-right: 12px;
   }
 
   .logo {
