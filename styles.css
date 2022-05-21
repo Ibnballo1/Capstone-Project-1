@@ -820,13 +820,14 @@ body {
   }
 
   .footer {
-    justify-content: space-evenly;
-    background-color: var(--pry-color);
+    justify-content: center;
+    background-color: #414246;
     height: 15vh;
   }
 
   .footer-logo {
-    height: 50px;
+    height: 6.25rem;
+    margin-right: 20px;
   }
 
   .footer-logo img {
