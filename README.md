@@ -23,7 +23,7 @@ Feel free to check the [issues page](https://github.com/Ibnballo1/Capstone-Proje
 You can create one if there is no issue.
 
 # Live Demo
-This is a link to the [live demo](https://ibnballo1.github.io/capstone-project-1/) 
+This is a link to the [live demo](https://ibnballo1.github.io/Capstone-Project-1/) 
 
 # Show your support
 Kindly give a :hearts: if you like this.
