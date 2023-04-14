@@ -4,7 +4,7 @@ This project is a part of my Microverse curriculum. This is made as Final Projec
 # WEBTEKHY UNIVERSAL BOOTCAMP SCREENSHOT
 <div>
   <img src='https://github.com/Ibnballo1/Capstone-Project-1/blob/16edffb4b25797642f6866eb49c2643a7c7f0051/images/ScreenShot_20230413124247.png' alt='screenshot'> <br /><br />
-  <img src='https://github.com/Ibnballo1/Capstone-Project-1/blob/refactoring/images/ScreenShot_20230413125213.png' alt='Screenshot2'>
+  <img src='https://github.com/Ibnballo1/Capstone-Project-1/blob/refactoring/images/ScreenShot_20230414075149.png' alt='Screenshot2'>
 <div>
 
 # Live Demo
