@@ -79,4 +79,5 @@ Kindly give a :hearts: if you like this.
 
 
 # 📝 License
-Original design idea by Cindy Shin in Behance, in association with the Creative Commons license of the design.
+This project is [MIT](https://github.com/Ibnballo1/Capstone-Project-1/blob/refactoring/MIT.md) licensed.
+Original design idea by Cindy Shin in Behance, in association with the Creative Commons [license](https://creativecommons.org/licenses/by-nc/4.0/) of the design.
