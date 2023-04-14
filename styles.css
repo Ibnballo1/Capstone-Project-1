@@ -15,10 +15,7 @@
 }
 
 body {
-  background-image: url('images/mobile_bg.png');
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
+  background: url('images/mobile_bg.png') no-repeat top / cover;
 }
 
 .social {
@@ -554,13 +551,6 @@ body {
 /* Screen size greater than 768px */
 
 @media only screen and (min-width: 769px) {
-  body {
-    background-image: url('images/desktop-background-img.png');
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-  }
-
   .header {
     background-color: #fff;
     flex-direction: row-reverse;
@@ -651,7 +641,7 @@ body {
     text-decoration: none;
     font-family: var(--tertiary-font);
     font-weight: 500;
-    font-size: 12px;
+    font-size: 14px;
     color: gray;
   }
 
