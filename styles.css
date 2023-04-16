@@ -37,11 +37,16 @@ body {
   display: none;
 }
 
+.icon-menu,
+.program-section {
+  background-color: var(--pry-color);
+}
+
 .icon-menu {
+  border: 2px solid red;
   position: absolute;
   top: 0;
   left: 0;
-  background-color: var(--pry-color);
   opacity: 1;
   width: 99.8%;
   height: 99.9%;
@@ -96,20 +101,44 @@ body {
   padding: 24px;
 }
 
-.details {
-  margin: 36px 0;
+.details,
+.prog-title,
+.sp-details,
+.entity,
+.abt-nav,
+.wt-nav {
   color: var(--sec-color);
 }
 
-.quote-text {
+.details {
+  margin: 36px 0;
+}
+
+.quote-text,
+.descriptions,
+.logo-description,
+.location,
+.program-title,
+.join,
+.past-bootcamp,
+.past-bootcamp-details,
+.featured-speaker,
+.partner {
   font-family: var(--sec-font);
+}
+
+.quote-text {
   font-weight: 500;
   font-size: 24px;
   margin-bottom: 6px;
 }
 
-.title {
+.title,
+.footnote {
   font-family: var(--pry-font);
+}
+
+.title {
   font-weight: 700;
   font-size: 30px;
 }
@@ -118,9 +147,24 @@ body {
   font-size: 26px;
 }
 
+.abt,
+.email-address,
+.logo-text,
+.date,
+.prog-title,
+.prog-details,
+.year,
+.abt-it,
+.sp-name,
+.sp-details,
+.partners li,
+.more,
+.copyright {
+  font-family: var(--tertiary-font);
+}
+
 .abt {
   text-align: center;
-  font-family: var(--tertiary-font);
   font-size: 14px;
 }
 
@@ -129,10 +173,21 @@ body {
   justify-content: center;
 }
 
-.email-address {
+.email-address,
+.logo-text,
+.logo-description,
+.date,
+.sp-name,
+.more {
   color: var(--pry-color);
-  font-family: var(--tertiary-font);
+}
+
+.email-address {
   font-weight: 600;
+}
+
+.descriptions {
+  background-color: var(--tertiary-color);
 }
 
 .descriptions {
@@ -140,10 +195,15 @@ body {
   display: flex;
   padding: 16px;
   margin: 16px 0;
-  font-family: var(--sec-font);
   font-weight: 400;
   line-height: 24px;
-  background-color: var(--tertiary-color);
+}
+
+.logo-section,
+.divider,
+.more-speakers,
+.less-speakers {
+  border-bottom: 2px solid var(--tertiary-color);
 }
 
 .logo-section {
@@ -156,23 +216,22 @@ body {
   margin-bottom: 48px;
   gap: 16px;
   text-align: center;
-  border-bottom: 2px solid var(--tertiary-color);
 }
 
 .logo-text {
-  font-family: var(--tertiary-font);
   font-weight: 400;
-  color: var(--pry-color);
+}
+
+.bt-line,
+.bold {
+  border-bottom: 2px solid var(--sec-color);
 }
 
 .bt-line {
-  border-bottom: 2px solid var(--sec-color);
   width: 32px;
 }
 
 .logo-description {
-  color: var(--pry-color);
-  font-family: var(--sec-font);
   font-size: 14px;
   margin-bottom: 20px;
 }
@@ -183,15 +242,12 @@ body {
 }
 
 .date {
-  font-family: var(--tertiary-font);
   font-size: 30px;
   line-height: 42px;
-  color: var(--pry-color);
   margin-bottom: 8px;
 }
 
 .location {
-  font-family: var(--sec-font);
   font-weight: 600;
   margin-bottom: 35px;
 }
@@ -201,14 +257,17 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--pry-color);
   background-image: url('images/pattern_bg.png');
   padding: 32px 16px;
 }
 
-.program-title {
+.program-title,
+.prog-details,
+.partner {
   color: var(--tertiary-color);
-  font-family: var(--sec-font);
+}
+
+.program-title {
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 0.5px;
@@ -244,11 +303,9 @@ body {
 
 .prog-title {
   text-align: left;
-  font-family: var(--tertiary-font);
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
-  color: var(--sec-color);
   margin-right: 30px;
 }
 
@@ -269,8 +326,6 @@ body {
 }
 
 .prog-details {
-  color: var(--tertiary-color);
-  font-family: var(--tertiary-font);
   font-weight: 400;
 }
 
@@ -286,7 +341,6 @@ body {
 
 .join {
   color: #fff;
-  font-family: var(--sec-font);
   font-style: normal;
   font-weight: 400;
   line-height: 12px;
@@ -305,7 +359,6 @@ body {
 }
 
 .past-bootcamp {
-  font-family: var(--sec-font);
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -315,7 +368,6 @@ body {
 
 .past-bootcamp-details {
   text-align: center;
-  font-family: var(--sec-font);
   font-weight: 400;
   font-size: 14px;
   margin-bottom: 32px;
@@ -358,7 +410,6 @@ body {
 .year,
 .abt-it {
   color: #fff;
-  font-family: var(--tertiary-font);
   font-size: 30px;
   line-height: 42px;
   margin-bottom: 8px;
@@ -376,15 +427,10 @@ body {
 }
 
 .featured-speaker {
-  font-family: var(--sec-font);
   font-weight: 600;
   font-size: 24px;
   word-spacing: 6px;
   margin-bottom: 12px;
-}
-
-.bold {
-  border-bottom: 2px solid var(--sec-color);
 }
 
 .speakers-details {
@@ -422,30 +468,24 @@ body {
 }
 
 .sp-name {
-  font-family: var(--tertiary-font);
   font-weight: 600;
   line-height: 24px;
-  color: var(--pry-color);
   margin-bottom: 8px;
 }
 
 .sp-details {
-  font-family: var(--tertiary-font);
   font-style: oblique;
   font-size: 13px;
   line-height: 18px;
-  color: var(--sec-color);
   margin-bottom: 8px;
 }
 
 .divider {
   width: 20px;
-  border-bottom: 2px solid var(--tertiary-color);
   margin-bottom: 8px;
 }
 
 .footnote {
-  font-family: var(--pry-font);
   font-weight: 300;
   color: gray;
   font-size: 10px;
@@ -462,8 +502,6 @@ body {
 
 .partner {
   margin-bottom: 8px;
-  color: var(--tertiary-color);
-  font-family: var(--sec-font);
   font-weight: 500;
   font-size: 22px;
 }
@@ -480,7 +518,6 @@ body {
 
 .partners li {
   color: grey;
-  font-family: var(--tertiary-font);
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
@@ -496,17 +533,13 @@ body {
   justify-content: center;
   align-items: center;
   height: 45px;
-  border: 2px solid var(--tertiary-color);
 }
 
 .more {
-  font-family: var(--tertiary-font);
-  color: var(--pry-color);
   margin-right: 6px;
 }
 
 .entity {
-  color: var(--sec-color);
   font-weight: 800;
   font-size: 12px;
 }
@@ -529,7 +562,6 @@ body {
 }
 
 .copyright {
-  font-family: var(--tertiary-font);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -572,8 +604,12 @@ body {
     list-style: none;
   }
 
-  .top-nav-link {
+  .top-nav-link,
+  .nav-link {
     font-family: var(--tertiary-font);
+  }
+
+  .top-nav-link {
     font-weight: 500;
     font-size: 12px;
     color: #f3f3f3;
@@ -626,15 +662,9 @@ body {
 
   .nav-link {
     text-decoration: none;
-    font-family: var(--tertiary-font);
     font-weight: 500;
     font-size: 14px;
     color: gray;
-  }
-
-  .abt-nav,
-  .wt-nav {
-    color: var(--sec-color);
   }
 
   .wt-nav {
