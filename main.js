@@ -81,8 +81,9 @@ data.forEach((featureSpeakers) => {
   const { title, description, linkImg, more } = featureSpeakers;
 
   const speakerElement = document.createElement("div");
-  let speakerClass = (counter > 2) ? 'speaker-hidden' : `speaker-${counter + 1}`;
-  speakerElement.classList.add("speaker", `${speakerClass}`);
+  let speakerClass = (counter > 2) ? 'speaker-hidden' : `speaker-show`;
+
+  speakerElement.classList.add(`${speakerClass}`);
   speakerElement.innerHTML = `
     <div class="image${counter + 1}"></div>
       
