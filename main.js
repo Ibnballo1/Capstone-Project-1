@@ -68,34 +68,66 @@ const data = [
   },
 ];
 
-// Creating the feature speaker section dynamically
-const featureSpeakerSection = document.querySelector('.speakers-details');
+const featureSpeakerSection = document.querySelector(".speakers-details");
+const moreSpeaker = document.querySelector('.more-speakers');
+const more = document.querySelector('.more');
+const entity = document.querySelector('.entity');
 let counter = 0;
 
-data.forEach((featureSpeakers) => {
-  const {
-    title, description, linkImg, more,
-  } = featureSpeakers;
+// Create a DocumentFragment to store the elements
+const speakersFragment = document.createDocumentFragment();
 
-  const speakersHTML = `
-    <div class="speaker speaker-1">
-      <div class="image${counter + 1}"></div>
-        
-        <div class="sp-${counter + 1}-details">
-            <h3 class="sp-name">${title}</h3>
-            <p class="sp-details">
-                ${description}
-            </p>
-            <div class="divider"></div>
-            <p class="footnote">
-                ${more}
-            </p>
-        </div>
-    </div>
+data.forEach((featureSpeakers) => {
+  const { title, description, linkImg, more } = featureSpeakers;
+
+  const speakerElement = document.createElement("div");
+  let speakerClass = (counter > 2) ? 'speaker-hidden' : `speaker-show`;
+
+  speakerElement.classList.add(`${speakerClass}`);
+  speakerElement.innerHTML = `
+    <div class="image${counter + 1}"></div>
+      
+      <div class="sp-${counter + 1}-details">
+          <h3 class="sp-name">${title}</h3>
+          <p class="sp-details">
+              ${description}
+          </p>
+          <div class="divider"></div>
+          <p class="footnote">
+              ${more}
+          </p>
+      </div>
   `;
 
-  featureSpeakerSection.insertAdjacentHTML('beforeend', speakersHTML);
-  document.querySelector(`.image${counter + 1}`).style.backgroundImage = `url("${linkImg}")`;
+  speakerElement.querySelector(
+    `.image${counter + 1}`
+  ).style.backgroundImage = `url("${linkImg}")`;
   // Set background image dynamically
+
+  speakersFragment.appendChild(speakerElement);
   counter += 1;
 });
+
+// Append the DocumentFragment to the featureSpeakerSection div container
+featureSpeakerSection.innerHTML = "";
+featureSpeakerSection.appendChild(speakersFragment);
+
+let clickCount = 0;
+
+moreSpeaker.addEventListener('click', (e)=>{
+  if (clickCount == 0 || clickCount % 2 == 0) {
+    document.querySelectorAll(".speaker-hidden").forEach((sh) => {
+      sh.style.display = "grid";
+    });
+    more.innerHTML = 'Less'
+    entity.innerHTML = '&#x1431';
+  } else {
+    document.querySelectorAll(".speaker-hidden").forEach((sh) => {
+      sh.style.display = "none";
+    });
+    more.innerHTML = "More";
+    entity.innerHTML = "&#5167;";
+  }
+
+  clickCount++;
+})
