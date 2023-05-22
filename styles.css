@@ -22,28 +22,13 @@ body {
   overflow-y: hidden;
 }
 
-.header,
-.js-nav-list,
-.email-contact,
-.descriptions,
-.logo-section,
-.program-section,
-.prog,
-.join-bootcamp,
-.see-past-section,
-.abt-past,
-.past-img,
-.speakers,
-.partner-section,
-.partners,
-.more-speakers,
-.less-speakers,
-.footer,
-.copyright {
+.flex-box,
+.js-nav-list {
   display: flex;
 }
 
-.header,
+/* .header, */
+.flex-align-center,
 .logo-section,
 .program-section,
 .prog,
