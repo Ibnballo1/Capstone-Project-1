@@ -27,21 +27,7 @@ body {
   display: flex;
 }
 
-/* .header, */
-.flex-align-center,
-.logo-section,
-.program-section,
-.prog,
-.join-bootcamp,
-.see-past-section,
-.past-img,
-.speakers,
-.partner-section,
-.partners,
-.more-speakers,
-.less-speakers
-.footer,
-.copyright {
+.flex-align-center {
   align-items: center;
 }
 
@@ -50,11 +36,7 @@ body {
   margin-bottom: 28px;
 }
 
-.social,
-.logo,
-.close,
-.navis,
-.all-progs,
+.dp-none,
 .speaker-hidden {
   display: none;
 }
@@ -116,12 +98,8 @@ body {
   padding: 24px;
 }
 
-.details,
-.prog-title,
-.sp-details,
-.entity,
-.abt-nav,
-.wt-nav {
+.sec-color,
+.sp-details {
   color: var(--sec-color);
 }
 
@@ -129,16 +107,7 @@ body {
   margin: 36px 0;
 }
 
-.quote-text,
-.descriptions,
-.logo-description,
-.location,
-.program-title,
-.join,
-.past-bootcamp,
-.past-bootcamp-details,
-.featured-speaker,
-.partner {
+.sec-font {
   font-family: var(--sec-font);
 }
 
@@ -162,19 +131,9 @@ body {
   font-size: 26px;
 }
 
-.abt,
-.email-address,
-.logo-text,
-.date,
-.prog-title,
-.prog-details,
-.year,
-.abt-it,
-.sp-name,
-.sp-details,
+.tertiary-font,
 .partners li,
-.more,
-.copyright {
+.more {
   font-family: var(--tertiary-font);
 }
 

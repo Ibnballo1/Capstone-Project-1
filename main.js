@@ -88,8 +88,8 @@ data.forEach((featureSpeakers) => {
     <div class="image${counter + 1}"></div>
       
       <div class="sp-${counter + 1}-details">
-          <h3 class="sp-name">${title}</h3>
-          <p class="sp-details">
+          <h3 class="sp-name tertiary-font">${title}</h3>
+          <p class="sp-details tertiary-font">
               ${description}
           </p>
           <div class="divider"></div>
