@@ -22,41 +22,12 @@ body {
   overflow-y: hidden;
 }
 
-.header,
-.js-nav-list,
-.email-contact,
-.descriptions,
-.logo-section,
-.program-section,
-.prog,
-.join-bootcamp,
-.see-past-section,
-.abt-past,
-.past-img,
-.speakers,
-.partner-section,
-.partners,
-.more-speakers,
-.less-speakers,
-.footer,
-.copyright {
+.flex-box,
+.js-nav-list {
   display: flex;
 }
 
-.header,
-.logo-section,
-.program-section,
-.prog,
-.join-bootcamp,
-.see-past-section,
-.past-img,
-.speakers,
-.partner-section,
-.partners,
-.more-speakers,
-.less-speakers
-.footer,
-.copyright {
+.flex-align-center {
   align-items: center;
 }
 
@@ -65,11 +36,7 @@ body {
   margin-bottom: 28px;
 }
 
-.social,
-.logo,
-.close,
-.navis,
-.all-progs,
+.dp-none,
 .speaker-hidden {
   display: none;
 }
@@ -131,12 +98,8 @@ body {
   padding: 24px;
 }
 
-.details,
-.prog-title,
-.sp-details,
-.entity,
-.abt-nav,
-.wt-nav {
+.sec-color,
+.sp-details {
   color: var(--sec-color);
 }
 
@@ -144,16 +107,7 @@ body {
   margin: 36px 0;
 }
 
-.quote-text,
-.descriptions,
-.logo-description,
-.location,
-.program-title,
-.join,
-.past-bootcamp,
-.past-bootcamp-details,
-.featured-speaker,
-.partner {
+.sec-font {
   font-family: var(--sec-font);
 }
 
@@ -177,19 +131,9 @@ body {
   font-size: 26px;
 }
 
-.abt,
-.email-address,
-.logo-text,
-.date,
-.prog-title,
-.prog-details,
-.year,
-.abt-it,
-.sp-name,
-.sp-details,
+.tertiary-font,
 .partners li,
-.more,
-.copyright {
+.more {
   font-family: var(--tertiary-font);
 }
 
@@ -202,12 +146,8 @@ body {
   justify-content: center;
 }
 
-.email-address,
-.logo-text,
-.logo-description,
-.date,
-.sp-name,
-.more {
+.more,
+.pry-color {
   color: var(--pry-color);
 }
 
@@ -461,24 +401,14 @@ body {
   margin-bottom: 22px;
 }
 
-.image1,
-.image2,
-.image3,
-.image4,
-.image5,
-.image6 {
+.img-style {
   height: 160px;
   background-repeat: no-repeat;
   background-position: center;
   object-fit: cover;
 }
 
-.sp-1-details,
-.sp-2-details,
-.sp-3-details,
-.sp-4-details,
-.sp-5-details,
-.sp-6-details {
+.sp-mtop {
   margin-top: 3px;
 }
 
@@ -579,19 +509,11 @@ body {
     justify-content: space-around;
   }
 
-  .social,
-  .top-nav,
-  .logo,
-  .navis,
   .programs,
-  .image1,
-  .image2,
-  .image3,
-  .image4,
-  .image5,
-  .image6,
+  .flex-img,
   .abt-sec,
-  .abt-details {
+  .abt-details,
+  .dp-none {
     display: flex;
   }
 
@@ -742,11 +664,7 @@ body {
     font-size: 18px;
   }
 
-  .title-1,
-  .title-2,
-  .title-3,
-  .title-4,
-  .title-5 {
+  .title-margin {
     margin: 8px 0;
   }
 
@@ -784,12 +702,7 @@ body {
     object-fit: cover;
   }
 
-  .sp-1-details,
-  .sp-2-details,
-  .sp-3-details,
-  .sp-4-details,
-  .sp-5-details,
-  .sp-6-details {
+  .sp-dp {
     display: block;
   }
 
