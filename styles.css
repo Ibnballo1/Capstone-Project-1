@@ -509,21 +509,12 @@ body {
     justify-content: space-around;
   }
 
-  .social,
-  .top-nav,
-  .logo,
-  .navis,
   .programs,
-  .image1,
-  .image2,
-  .image3,
-  .image4,
-  .image5,
-  .image6,
+  .flex-img,
   .abt-sec,
-  .abt-details {
+  .abt-details,
+  .dp-none {
     display: flex;
-    border: 2px solid red;
   }
 
   .social,
@@ -673,11 +664,7 @@ body {
     font-size: 18px;
   }
 
-  .title-1,
-  .title-2,
-  .title-3,
-  .title-4,
-  .title-5 {
+  .title-margin {
     margin: 8px 0;
   }
 
@@ -715,12 +702,7 @@ body {
     object-fit: cover;
   }
 
-  .sp-1-details,
-  .sp-2-details,
-  .sp-3-details,
-  .sp-4-details,
-  .sp-5-details,
-  .sp-6-details {
+  .sp-dp {
     display: block;
   }
 

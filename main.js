@@ -85,9 +85,9 @@ data.forEach((featureSpeakers) => {
 
   speakerElement.classList.add(`${speakerClass}`);
   speakerElement.innerHTML = `
-    <div class="image${counter + 1} img-style"></div>
+    <div class="image${counter + 1} img-style flex-img"></div>
       
-      <div class="sp-${counter + 1}-details sp-mtop">
+      <div class="sp-${counter + 1}-details sp-mtop sp-dp">
           <h3 class="sp-name tertiary-font pry-color">${title}</h3>
           <p class="sp-details tertiary-font">
               ${description}
