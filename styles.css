@@ -146,12 +146,8 @@ body {
   justify-content: center;
 }
 
-.email-address,
-.logo-text,
-.logo-description,
-.date,
-.sp-name,
-.more {
+.more,
+.pry-color {
   color: var(--pry-color);
 }
 
@@ -405,24 +401,14 @@ body {
   margin-bottom: 22px;
 }
 
-.image1,
-.image2,
-.image3,
-.image4,
-.image5,
-.image6 {
+.img-style {
   height: 160px;
   background-repeat: no-repeat;
   background-position: center;
   object-fit: cover;
 }
 
-.sp-1-details,
-.sp-2-details,
-.sp-3-details,
-.sp-4-details,
-.sp-5-details,
-.sp-6-details {
+.sp-mtop {
   margin-top: 3px;
 }
 
@@ -537,6 +523,7 @@ body {
   .abt-sec,
   .abt-details {
     display: flex;
+    border: 2px solid red;
   }
 
   .social,
